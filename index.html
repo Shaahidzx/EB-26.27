@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Main Page</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* A little custom style to use the Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Keyframes for the ticker animation */
+        @keyframes ticker {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Class to apply the animation */
+        .animate-ticker {
+            animation: ticker 40s linear infinite reverse; /* Reversed the animation direction */
+        }
+    </style>
+</head>
+<body class="bg-[#101010] text-[#f7f7f7]">
+
+    <!-- Ticker Section -->
+    <div class="relative flex overflow-hidden font-bold py-3 border-b border-gray-800">
+        <!-- The seamless scrolling is achieved by having two identical divs that animate -->
+        <div class="flex animate-ticker whitespace-nowrap">
+            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
+            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
+            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
+            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
+            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
+            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
+        </div>
+        <div class="flex animate-ticker whitespace-nowrap" aria-hidden="true">
+            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
+            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
+            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
+            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
+            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
+            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <!-- The min-h is calculated to fill the screen minus the ticker's height -->
+    <div class="flex flex-col items-center justify-center min-h-[calc(100vh-57px)] p-6 text-center">
+        <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4">
+                The Next Generation of AIESEC in NSBM Begins With You
+            </h1>
+
+            <!-- Countdown Timer Section -->
+            <div class="text-center my-10">
+                <p class="text-lg text-gray-300 mb-3 uppercase tracking-wider">EXECUTIVE BOARD 26.27 Applications close in</p>
+                <div id="countdown" class="flex justify-center space-x-4 md:space-x-8 text-white">
+                    <div>
+                        <span id="days" class="text-4xl font-bold text-[#11c76f]">00</span>
+                        <span class="block text-sm text-gray-400">Days</span>
+                    </div>
+                    <div>
+                        <span id="hours" class="text-4xl font-bold text-[#11c76f]">00</span>
+                        <span class="block text-sm text-gray-400">Hours</span>
+                    </div>
+                    <div>
+                        <span id="minutes" class="text-4xl font-bold text-[#11c76f]">00</span>
+                        <span class="block text-sm text-gray-400">Minutes</span>
+                    </div>
+                    <div>
+                        <span id="seconds" class="text-4xl font-bold text-[#11c76f]">00</span>
+                        <span class="block text-sm text-gray-400">Seconds</span>
+                    </div>
+                </div>
+                <p id="countdown-ended" class="hidden text-2xl font-bold text-red-500 mt-4">Applications have closed.</p>
+            </div>
+
+            <p class="text-lg md:text-xl text-gray-400 mb-10">
+    Every second pulls you closer to your <span class="text-white font-semibold">next big leap</span> the moment you <span class="text-[#11c76f] font-bold">choose to lead.</span>   We’re shaping the next generation of AIESEC in NSBM: <span class="text-[#11c76f] font-semibold tracking-wide">fearless, driven, and unstoppable.</span>  
+    If you’re ready to rise, <span class="text-white font-semibold italic">this is where your journey begins.</span>
+</p>
+            <a href="faq.html" 
+               class="inline-block bg-[#11c76f] text-white font-bold py-4 px-10 rounded-lg text-lg hover:bg-green-600 transition-all duration-300 ease-in-out shadow-lg shadow-green-500/20 transform hover:scale-105">
+                View FAQs
+            </a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set the date we're counting down to
+            const countDownDate = new Date("Oct 22, 2025 23:59:59").getTime();
+
+            // Update the count down every 1 second
+            const countdownInterval = setInterval(function() {
+
+                // Get today's date and time
+                const now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                const distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the elements
+                document.getElementById("days").innerText = days.toString().padStart(2, '0');
+                document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+                document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+                document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+
+                // If the count down is finished, write some text
+                if (distance < 0) {
+                    clearInterval(countdownInterval);
+                    document.getElementById("countdown").classList.add('hidden');
+                    document.getElementById("countdown-ended").classList.remove('hidden');
+                }
+            }, 1000);
+        });
+    </script>
+
+</body>
+</html>
+
