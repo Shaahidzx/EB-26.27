@@ -20,19 +20,12 @@
             animation: fadeIn 0.6s ease-in-out;
         }
 
-        /* Keyframes for the ticker animation */
         @keyframes ticker {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
         }
-
-        /* Class to apply the animation */
         .animate-ticker {
-            animation: ticker 40s linear infinite reverse; /* Reversed the animation direction */
+            animation: ticker 40s linear infinite reverse;
         }
     </style>
 </head>
@@ -40,18 +33,13 @@
 
     <!-- Ticker Section -->
     <div class="relative flex overflow-hidden font-bold py-3 border-b border-gray-800">
-        <!-- The seamless scrolling is achieved by having two identical divs that animate -->
         <div class="flex animate-ticker whitespace-nowrap">
-            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
-            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
             <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
             <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
             <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
             <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
         </div>
         <div class="flex animate-ticker whitespace-nowrap" aria-hidden="true">
-            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
-            <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
             <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
             <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
             <span class="mx-4 text-lg text-[#11c76f]">AIESEC in NSBM | Gen 26.27</span>
@@ -69,364 +57,534 @@
         <!-- FAQ Items -->
         <div class="space-y-4 flex-grow">
 
-            <!-- Eligibility & Experience -->
+            <!-- 1 -->
             <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
                 <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-                    <span>How much AIESEC experience do I need to apply?</span>
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">1.</span>
+                        <span>Is there enough time to start filling the application now?</span>
+                    </div>
                     <span class="faq-icon text-[#11c76f] text-2xl">+</span>
                 </button>
                 <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
                     <div class="p-5 pt-0 text-gray-300">
-                        <p>Literally none other than being an AIESECer. Even if you joined in Winter, you’re eligible. What matters is your mindset, not your term count.</p>
+                        <p>Absolutely not! The earlier you start, the more time your ideas have to mature and improve. Remember. it’s never over until it’s over, so begin now and make it count.</p>
                     </div>
                 </div>
             </div>
 
+            <!-- 2 -->
             <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
                 <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-                    <span>Do I need to have held a leadership role before?</span>
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">2.</span>
+                        <span>I feel like I don’t know enough AIESEC to qualify. Should I still apply?</span>
+                    </div>
                     <span class="faq-icon text-[#11c76f] text-2xl">+</span>
                 </button>
                 <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
                     <div class="p-5 pt-0 text-gray-300">
-                        <p>Nope. Previous roles help, but they’re not required. The application is about potential and vision, not titles.</p>
+                        <p>100% Yes. No one ever feels fully ready that’s the point. You’ll learn a lot, figure things out as you go, and grow faster than you think. Always take the shot when the chance comes.</p>
                     </div>
                 </div>
             </div>
 
+            <!-- 3 -->
             <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
                 <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-                    <span>I feel like I don’t know enough AIESEC to qualify. Should I still apply?</span>
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">3.</span>
+                        <span>How much AIESEC experience do I need to apply?</span>
+                    </div>
                     <span class="faq-icon text-[#11c76f] text-2xl">+</span>
                 </button>
                 <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
                     <div class="p-5 pt-0 text-gray-300">
-                        <p>100% yes. Everyone starts somewhere. What counts is your effort, clarity, and willingness to learn fast.</p>
+                        <p>You don’t need years of experience just the courage to step up. What drives you is your energy, initiative, and willingness to lead, not how long you’ve been around.</p>
                     </div>
                 </div>
             </div>
 
+            <!-- 4 -->
             <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
                 <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-                    <span>Can I apply cross-functionally?</span>
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">4.</span>
+                        <span>Do I need to have held a leadership role before?</span>
+                    </div>
                     <span class="faq-icon text-[#11c76f] text-2xl">+</span>
                 </button>
                 <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
                     <div class="p-5 pt-0 text-gray-300">
-                        <p>Yes! Cross-functional applying is allowed. If you vibe with the function and believe you can grow there — go for it.</p>
+                        <p>It’s not a requirement. Having held a leadership role before can help, but what truly matters is your vision, drive, and mindset to lead, learn, and grow.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Application Process -->
+            <!-- 5 -->
             <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
                 <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-                    <span>Have you gone through the entire application booklet?</span>
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">5.</span>
+                        <span>What if I’m not confident enough to apply?</span>
+                    </div>
                     <span class="faq-icon text-[#11c76f] text-2xl">+</span>
                 </button>
                 <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
                     <div class="p-5 pt-0 text-gray-300">
-                        <p>You should. That’s your roadmap. Read it carefully before filling anything — it tells you exactly what’s expected.</p>
+                        <p>Apply anyway. Confidence comes after the leap, not before it. Everyone feels that fear you just do it anyway.</p>
                     </div>
                 </div>
             </div>
 
+            <!-- 6 -->
             <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
                 <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-                    <span>Is there enough time to start filling the application now?</span>
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">6.</span>
+                        <span>Can I apply for a different function?</span>
+                    </div>
                     <span class="faq-icon text-[#11c76f] text-2xl">+</span>
                 </button>
                 <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
                     <div class="p-5 pt-0 text-gray-300">
-                        <p>Yes — if you start today. The earlier you begin, the better your ideas will mature before submission.</p>
+                        <p><span class="italic text-gray-400">(For example, if you’re in iGV but want to apply for oGV even though you don’t know much about it)</span></p>
+                        <br>
+                        <p>Yes, cross-functional applications are allowed. If you vibe with that function, see potential for growth, and believe you can contribute, go for it. Make sure to learn the basics and talk to current VPs, TLs, and members to gather insight before and while filling your application.</p>
                     </div>
                 </div>
             </div>
 
+            <!-- 7 -->
             <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
                 <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-                    <span>What is the Blank Paper Challenge?</span>
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">7.</span>
+                        <span>What is the Blank Paper Challenge?</span>
+                    </div>
                     <span class="faq-icon text-[#11c76f] text-2xl">+</span>
                 </button>
                 <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
                     <div class="p-5 pt-0 text-gray-300">
-                        <p>It’s a creative task that tests your ability to think independently — how you express your ideas from scratch without prompts.</p>
+                        <p>The Blank Paper Challenge is a creative task that tests your ability to think independently and express ideas. It can be a drawing, doodle, calligraphy, or any visual expression. It’s not about writing a paragraph explaining your vision.</p>
                     </div>
                 </div>
             </div>
 
+            <!-- 8 -->
             <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
                 <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-                    <span>What documents do I need to submit?</span>
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">8.</span>
+                        <span>What documents do I need to submit?</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300 space-y-3">
+                        <div class="bg-[#151515] p-3 rounded-md border border-gray-700/50">
+                            <p class="font-semibold text-white">Application Questionnaire</p>
+                            <p class="text-sm text-gray-400">Max 30 pages, PDF format</p>
+                        </div>
+                         <div class="bg-[#151515] p-3 rounded-md border border-gray-700/50">
+                            <p class="font-semibold text-white">Updated CV</p>
+                            <p class="text-sm text-gray-400">PDF format</p>
+                        </div>
+                         <div class="bg-[#151515] p-3 rounded-md border border-gray-700/50">
+                            <p class="font-semibold text-white">Endorsement Letters</p>
+                            <p class="text-sm text-gray-400">2 letters: one from your TMVP and one from the EB (not from LCP/LCPe)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">9.</span>
+                        <span>Whom should I email my application to?</span>
+                    </div>
                     <span class="faq-icon text-[#11c76f] text-2xl">+</span>
                 </button>
                 <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
                     <div class="p-5 pt-0 text-gray-300">
-                        <p>Your filled application booklet, endorsement letters, and any challenge outputs (like the blank paper challenge).</p>
+                        <p class="font-bold text-lg mb-3 text-white">Submission Instructions:</p>
+                        <div class="space-y-3">
+                            <div class="bg-[#151515] p-3 rounded-md border border-gray-700/50">
+                                <p class="font-semibold text-white">1. Package</p>
+                                <p class="text-sm text-gray-400">Package all documents into a <code>.zip</code> file.</p>
+                            </div>
+                            <div class="bg-[#151515] p-3 rounded-md border border-gray-700/50">
+                                <p class="font-semibold text-white">2. File Name</p>
+                                <p class="text-sm text-gray-400">Name the file using the format: <em>FIRSTNAME_LASTNAME_POSITION APPLIED</em></p>
+                                <div class="mt-2 text-xs bg-black/30 p-2 rounded-md">
+                                    <p class="text-gray-300 mb-1">Example:</p>
+                                    <code class="text-green-400 break-all">MOHAMED<span class="text-gray-500">_</span>SHAAHID<span class="text-gray-500">_</span>OEVP<span class="text-gray-500">_</span>BD</code>
+                                </div>
+                            </div>
+                            <div class="bg-[#151515] p-3 rounded-md border border-gray-700/50">
+                                <p class="font-semibold text-white">3. Email To</p>
+                                <p class="text-sm text-gray-400">Email the .zip file to: <a href="mailto:shaahid@aiesec.net" class="text-[#11c76f] hover:underline">shaahid@aiesec.net</a></p>
+                            </div>
+                             <div class="bg-[#151515] p-3 rounded-md border border-gray-700/50">
+                                <p class="font-semibold text-white">4. CC</p>
+                                <p class="text-sm text-gray-400">CC: <a href="mailto:manthi.gamage@aiesec.net" class="text-[#11c76f] hover:underline">manthi.gamage@aiesec.net</a></p>
+                            </div>
+                            <div class="bg-[#151515] p-3 rounded-md border border-red-500/30">
+                                <p class="font-semibold text-white">5. Deadline</p>
+                                <p class="text-sm text-red-400">On or before <strong>22nd October, midnight</strong>.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <!-- 10 -->
             <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
                 <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-                    <span>Whom should I email my application to?</span>
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">10.</span>
+                        <span>What should be the email subject and body?</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300 space-y-4">
+                        <div class="bg-[#151515] p-3 rounded-md border border-gray-700/50">
+                            <p class="font-semibold text-white">Subject Format</p>
+                            <p class="text-sm text-gray-400">Application for OEVP [Applied Position] – [Your Full Name]</p>
+                             <div class="mt-2 text-xs bg-black/30 p-2 rounded-md">
+                                <p class="text-gray-300 mb-1">Example:</p>
+                                <code class="text-green-400">Application for OEVP iGV – Mohamed Shaahid</code>
+                            </div>
+                        </div>
+                        <div class="bg-[#151515] p-3 rounded-md border border-gray-700/50">
+                            <p class="font-semibold text-white">Body</p>
+                            <div class="text-sm text-gray-400 mt-2 bg-black/30 p-3 rounded-md font-mono">
+                                <p>Dear Shaahid,</p>
+                                <br>
+                                <p>Please find attached the package containing my application booklet and all required documents for my application.</p>
+                                <br>
+                                <p>Regards,</p>
+                                <p>[Your AIESEC Email signature]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">11.</span>
+                        <span>Do I have to answer all the questions in the booklet?</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300 space-y-3">
+                        <div class="bg-[#151515] p-3 rounded-md border border-green-500/30">
+                            <p class="font-semibold text-white">Mandatory Sections (1–4)</p>
+                            <p class="text-sm text-gray-400">These sections are mandatory for everyone, including the blank paper challenge.</p>
+                        </div>
+                         <div class="bg-[#151515] p-3 rounded-md border border-gray-700/50">
+                            <p class="font-semibold text-white">Position-Specific Sections (5 onwards)</p>
+                            <p class="text-sm text-gray-400">From Section 5, answer only the questions related to the position you’re applying for.</p>
+                            <div class="mt-2 text-xs bg-black/30 p-2 rounded-md">
+                                <p class="text-gray-300 mb-1">Example:</p>
+                                <p class="text-gray-400">If you’re applying for an iGV position, you don’t need to fill out questions for oGV, TM, or other functions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">12.</span>
+                        <span>What format should the booklet be in?</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300 space-y-3">
+                        <div class="bg-[#151515] p-3 rounded-md border border-gray-700/50 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-green-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <div>
+                                <p class="font-semibold text-white">Format &amp; Creativity</p>
+                                <p class="text-sm text-gray-400">Submit a PDF, not a Word doc. Be creative, but keep answers clear and readable.</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#151515] p-3 rounded-md border border-gray-700/50 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-green-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <div>
+                                <p class="font-semibold text-white">Seek Guidance</p>
+                                <p class="text-sm text-gray-400">If you're unsure about anything, ask your VP.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 13 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">13.</span>
+                        <span>Can I see an example booklet?</span>
+                    </div>
                     <span class="faq-icon text-[#11c76f] text-2xl">+</span>
                 </button>
                 <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
                     <div class="p-5 pt-0 text-gray-300">
-                        <p>Email it to the address mentioned in the call for applications (usually LCP or Election Committee).</p>
+                        <p>Yes! Drop me a DM on WhatsApp at <a href="tel:0707260460" class="text-[#11c76f] hover:underline font-semibold">0707 260 460</a> and I’ll show you a booklet.</p>
+                        <p class="mt-2 text-gray-400"><em>Note: It will not be exactly the same as the function you’re applying for—just for reference.</em></p>
                     </div>
                 </div>
             </div>
 
+            <!-- 14 -->
             <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
                 <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-                    <span>What should be the email subject and body?</span>
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">14.</span>
+                        <span>How many applications can I submit?</span>
+                    </div>
                     <span class="faq-icon text-[#11c76f] text-2xl">+</span>
                 </button>
                 <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
                     <div class="p-5 pt-0 text-gray-300">
-                        <p><b>Subject:</b> OEVP Application – [Your Full Name] – [Function]</p>
-                        <p class="mt-2"><b>Body:</b><br>
-                        Hi [Name/Team],<br>
-                        Please find attached my application booklet and required documents for the OEVP 26.27 term.<br>
-                        Looking forward to your acknowledgment.<br>
-                        Regards,<br>
-                        [Your Name]</p>
+                        <p>Only one application, and only for one role.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Confidence & Motivation -->
+            <!-- 15 -->
             <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
                 <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-                    <span>What if I’m not confident enough to apply?</span>
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">15.</span>
+                        <span>I’m not sure what to do as a [VP role] applicant.</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300 space-y-3">
+                        <div class="bg-[#151515] p-3 rounded-md border border-gray-700/50 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-green-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <div>
+                                <p class="font-semibold text-white">Read the Job Descriptions</p>
+                                <p class="text-sm text-gray-400">These are attached to the booklet for clarification.</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#151515] p-3 rounded-md border border-gray-700/50 flex items-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-green-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            <div>
+                                <p class="font-semibold text-white">Talk to Your VP</p>
+                                <p class="text-sm text-gray-400">Reach out for guidance if anything is unclear.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- 17 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">16.</span>
+                        <span>What are the next steps after submission?</span>
+                    </div>
                     <span class="faq-icon text-[#11c76f] text-2xl">+</span>
                 </button>
                 <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
                     <div class="p-5 pt-0 text-gray-300">
-                        <p>Apply anyway. Confidence comes after the leap, not before it. Everyone feels that fear — you just do it anyway.</p>
+                        <p>The next step is presentations, and you'll be informed about it soon.</p>
                     </div>
                 </div>
             </div>
 
+            <!-- 17 -->
             <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
                 <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-                    <span>Can I get feedback if I’m not selected?</span>
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">17.</span>
+                        <span>How long should my answers be?</span>
+                    </div>
                     <span class="faq-icon text-[#11c76f] text-2xl">+</span>
                 </button>
                 <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
                     <div class="p-5 pt-0 text-gray-300">
-                        <p>Yes, and you should. It’ll help you improve and prepare better for future roles. Feedback = growth.</p>
+                        <p>Clear and concise is best. Focus on quality over quantity. Try to express your ideas to the best of your ability within the 30 page limit (including the blank paper challenge).</p>
                     </div>
                 </div>
             </div>
 
-            <!-- FAQ: How much experience do I need? -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>How much experience do I need to apply?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <p>Literally none. As long as you’re an AIESECer — even if you joined this Winter — you’re qualified to apply. What matters is your drive and clarity of vision.</p>
-        </div>
-    </div>
-</div>
+            <!-- 18 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">18.</span>
+                        <span>Can I decorate or add visuals to my booklet?</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300">
+                        <p>Yes! Make it neat, readable, and visually appealing, but don’t let decorations distract from your answers.</p>
+                    </div>
+                </div>
+            </div>
 
-<!-- FAQ: Have you gone through the entire booklet? -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>Do I need to go through the entire booklet before applying?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <p>Yes — 100%. The booklet explains the role, expectations, and submission steps. Skipping it means missing key details that could cost your application.</p>
-        </div>
-    </div>
-</div>
+            <!-- 19 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">19.</span>
+                        <span>How creative can I be in my answers?</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300">
+                        <p>“Be as creative as you like, but make sure your answers stay professional and on topic. Show your personality without going overboard or being irrelevant.</p>
+                    </div>
+                </div>
+            </div>
 
-<!-- FAQ: Understanding guidelines -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>Do I need to understand all the guidelines?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <p>Yes. Make sure you read and understand the guidelines before submitting. If you’re unsure about anything, ask an EB member or your TL — better to clarify than assume.</p>
-        </div>
-    </div>
-</div>
+            <!-- 20 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">20.</span>
+                        <span>Do I need to show my booklet to anyone before submitting?</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300">
+                        <p>You are encouraged to ask your VP for feedback if needed, but it’s optional.</p>
+                    </div>
+                </div>
+            </div>
 
-<!-- FAQ: Where to email -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>Whom should I email my application to?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <p>Email your completed application package to <strong>ain-nsbm@aiesec.net</strong> before the deadline.</p>
-        </div>
-    </div>
-</div>
+            <!-- 21 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">21.</span>
+                        <span>I'm nervous my answers aren't good enough. What should I do?</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300">
+                        <p>Honesty, clarity, and thoughtfulness matter more than flawless writing. Focus on giving your best.</p>
+                    </div>
+                </div>
+            </div>
 
-<!-- FAQ: Email subject -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>What should the email subject be?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <p>Use the format: <strong>[OEVP Application] - [Your Full Name]</strong>. Example: <em>[OEVP Application] - Shaahid Mohamed</em>.</p>
-        </div>
-    </div>
-</div>
+            <!-- 22 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">22.</span>
+                        <span>I feel like I'll lose because others are more experienced.</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300">
+                        <p>Experience matters, but it’s not the only factor. Focus on what you can control: your motivation, clarity, creativity, and mindset. Presenting the best version of yourself matters, because authenticity and effort often stand out more than experience alone.</p>
+                    </div>
+                </div>
+            </div>
 
-<!-- FAQ: Email body -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>What do I write in the email body?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <p>Keep it short and professional. Example:</p>
-            <p class="italic mt-2">Dear AIESEC in NSBM, <br>I’ve attached my OEVP application documents for your review. Looking forward to the next steps. <br>Regards,<br>[Your Name]</p>
-        </div>
-    </div>
-</div>
+            <!-- 23 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">23.</span>
+                        <span>What if I get rejected?</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300">
+                        <p>Rejection doesn’t define your potential it’s just feedback, not a verdict on your abilities. Every application is a chance to learn and grow. Keep going, because you only need to succeed once to make it count.</p>
+                    </div>
+                </div>
+            </div>
 
-<!-- FAQ: Guided questions -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>What are the guided questions?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <p>They’re reflection prompts found in the application booklet. These help you express your understanding of AIESEC, your leadership style, and your future plans. Think of them as structured storytelling — be honest, not perfect.</p>
-        </div>
-    </div>
-</div>
+            <!-- 24 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">24.</span>
+                        <span>I feel stressed about the deadline. Any tips?</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300">
+                        <p>Break the booklet into smaller sections and tackle them one at a time. Small, steady progress always beats last minute panic.</p>
+                    </div>
+                </div>
+            </div>
 
-<!-- FAQ: Is it too late to start? -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>Am I too late to start my application now?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <p>Nope. There’s still enough time — if you start today. Focus on quality and self-reflection instead of rushing. The process itself helps you learn a lot.</p>
-        </div>
-    </div>
-</div>
+            <!-- 25 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">25.</span>
+                        <span>I don't want to ask for help because I'm afraid of looking weak.</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300">
+                        <p>Asking for guidance shows responsibility and maturity. Everyone needs support sometimes it's a sign of strength, not weakness. You can't do everything alone.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 26 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">26.</span>
+                        <span>Can I change my answers after submitting?</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300">
+                        <p>No. Make sure you review everything carefully before submitting.</p>
+                    </div>
+                </div>
+            </div>
 
-<!-- FAQ: Not enough AIESEC experience -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>I feel like I don’t know enough AIESEC to qualify — should I still apply?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <p>Absolutely. Everyone starts somewhere. What matters is how fast you learn, adapt, and commit. You’ll be guided throughout the process — so go for it.</p>
-        </div>
-    </div>
-</div>
-
-<!-- FAQ: Sample booklet -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>Can I look at a sample application booklet?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <p>Yes! Ask your VP, TL, or any EB member — they can share a sample from a past applicant to give you an idea of how to structure yours.</p>
-        </div>
-    </div>
-</div>
-
-<!-- FAQ: Cross-functional application -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>Is it okay to apply for a different function?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <p>Yes, you can apply cross-functionally! Just make sure you do your research about that function first — know what they do and what kind of leadership they need.</p>
-        </div>
-    </div>
-</div>
-
-<!-- FAQ: Cross-functional but don’t know much -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>I want to apply cross-functionally but I don’t know what happens in that function. Is that okay?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <p>That’s fine — but reach out to someone in that function before applying. Understanding their operations will make your application stronger and more relevant.</p>
-        </div>
-    </div>
-</div>
-
-<!-- FAQ: Blank Paper Challenge -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>What is the Blank Paper Challenge?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <p>It’s a creativity challenge where you start with a blank page and build your vision for your function. It shows how you think, not how you decorate — so focus on ideas, not design.</p>
-        </div>
-    </div>
-</div>
-
-<!-- FAQ: What documents to submit -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>What documents do I need to submit?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <ul class="list-disc list-inside space-y-1">
-                <li>Completed OEVP application booklet (PDF format)</li>
-                <li>Endorsement letter(s)</li>
-                <li>Blank Paper Challenge (if applicable)</li>
-                <li>Any additional documents mentioned in the call</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<!-- FAQ: Enough time to fill -->
-<div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
-    <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
-        <span>Do I have enough time to start filling the application now?</span>
-        <span class="faq-icon text-[#11c76f] text-2xl">+</span>
-    </button>
-    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
-        <div class="p-5 pt-0 text-gray-300">
-            <p>Yes, you do — if you start right away. The earlier you begin, the more time you’ll have to think deeply and refine your answers. Don’t wait for “perfect,” start with “progress.”</p>
-        </div>
-    </div>
-</div>
+            <!-- 27 -->
+            <div class="faq-item bg-[#1e1e1e] rounded-lg shadow-lg shadow-black/20">
+                <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-lg rounded-lg focus:outline-none">
+                    <div class="flex flex-1 items-start">
+                        <span class="text-[#11c76f] font-bold mr-4 w-8 flex-shrink-0">27.</span>
+                        <span>What happens if I miss the submission deadline?</span>
+                    </div>
+                    <span class="faq-icon text-[#11c76f] text-2xl">+</span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="p-5 pt-0 text-gray-300">
+                        <p>Late applications will not be considered. Always double check the deadline and submit before</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
-
-
-        
 
         <!-- Back Button -->
         <div class="text-center mt-10">
@@ -458,19 +616,18 @@
                         }
                     });
 
-                    // Toggle the clicked FAQ item
+                    // Toggle clicked FAQ item
                     if (expanded) {
                         answer.style.maxHeight = '0px';
                         icon.textContent = '+';
                         icon.classList.remove('rotate-45');
                     } else {
                         answer.style.maxHeight = answer.scrollHeight + 'px';
-                        icon.textContent = '+'; // Keep it as a plus, but rotate
+                        icon.textContent = '+';
                         icon.classList.add('rotate-45');
                     }
                 });
 
-                // Recalculate max-height on window resize for open items
                 window.addEventListener('resize', () => {
                     if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
                         answer.style.maxHeight = answer.scrollHeight + 'px';
@@ -481,4 +638,7 @@
     </script>
 </body>
 </html>
+
+
+
 
